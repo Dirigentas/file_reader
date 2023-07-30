@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost/creation_file_read/public/index.php/');
+define('URL', 'http://localhost/file_reader/public/index.php/');
 
 require __DIR__ . '/../autoloader/autoloader.php';
 

@@ -30,11 +30,11 @@ class App
     {
         $method = $_SERVER['REQUEST_METHOD'];
 
-        if ($url[0] == 'creation_file_read' && $url[1] == 'public' && count($url) === 3 && $method == 'GET') {
+        if ($url[0] == 'file_reader' && $url[1] == 'public' && count($url) === 3 && $method == 'GET') {
             return (new FileReadController)->index();
         }
 
-        if ($url[0] == 'creation_file_read' && $url[1] == 'public' && $url[3] == 'show' && count($url) === 5 && $method == 'GET') {
+        if ($url[0] == 'file_reader' && $url[1] == 'public' && $url[3] == 'show' && count($url) === 5 && $method == 'GET') {
             return (new FileReadController)->show($url[4]);
         }
 

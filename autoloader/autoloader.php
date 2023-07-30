@@ -3,10 +3,17 @@
 // declare(strict_types=1);
 
 // paimti ir dekoduoti konduktoriaus duomenys
-$configuration = json_decode(
-    file_get_contents('./../autoloader/conductor.json'),
-    true
-);
+if (@file_get_contents('./autoloader/conductor.json')) {
+    $configuration = json_decode(
+        file_get_contents('./autoloader/conductor.json'),
+        true
+    );
+} else {
+    $configuration = json_decode(
+        file_get_contents('./../autoloader/conductor.json'),
+        true
+    );
+}
 
 // nustatoma vieta kur padėti namespaces
 $namespaces = $configuration['autoload']['psr-4'];

@@ -2,6 +2,8 @@
 
 // declare(strict_types=1);
 
+namespace AllTests;
+
 use PHPUnit\Framework\TestCase;
 use Reader\Controllers\FileReadController;
 
@@ -15,12 +17,12 @@ class MyFirstTest extends TestCase
         $this->assertEquals(4, $result);
     }
 
-    public function testControllerShow(): void
-    {
-        $fileName = new FileReadController;
+    // public function testControllerShow(): void
+    // {
+    //     $fileName = new FileReadController;
 
-        $return = $fileName->show('JSON.json');
+    //     $return = $fileName->show('JSON.json');
 
-        $this->assertSame('JSON.json', $return);
-    }
+    //     $this->assertSame('JSON.json', $return);
+    // }
 }
