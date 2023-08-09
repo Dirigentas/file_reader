@@ -19,10 +19,11 @@ class MyFirstTest extends TestCase
 
     // public function testControllerShow(): void
     // {
-    //     $fileName = new FileReadController;
+    //     $class = new FileReadController;
 
-    //     $return = $fileName->show('JSON.json');
+    //     $return = $class->show('JSON.json');
 
-    //     $this->assertSame('JSON.json', $return);
+    //     $this->assertSame(App::view('show', FileReader::getFileData('JSON.json'), 'JSON.json'), $return);
     // }
 }
+?>
